@@ -1,0 +1,29 @@
+{
+  "name": "remote-shell-api-server",
+  "version": "0.0.1",
+  "description": "Run shell scripts on your linux machine from a remote source using this API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreirichkov/remote-shell-api-server.git"
+  },
+  "keywords": [
+    "remote",
+    "shell",
+    "api",
+    "server"
+  ],
+  "author": "Andrei Richkov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andreirichkov/remote-shell-api-server/issues"
+  },
+  "homepage": "https://github.com/andreirichkov/remote-shell-api-server#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
