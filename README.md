@@ -3,10 +3,13 @@ Run shell commands on your *nix machine from a remote source using this API.
 
 
 
-##Usage:
-```npm app.js [port_number]```
+##Getting started:
+```
+npm install
+node app.js [port_number]
+```
 
-*If the port number is not specified the server will run on port 3000.
+*If the port number is not passed as an argument the server will run on port 3000.
 
 
 
