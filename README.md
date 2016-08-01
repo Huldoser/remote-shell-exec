@@ -1,5 +1,5 @@
 # remote-shell-api-server
-Run shell scripts on your *nix machine from a remote source using this API.
+Run shell commands on your *nix machine from a remote source using this API.
 
 
 ##Usage:
