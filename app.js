@@ -1,18 +1,16 @@
 // *** This file initialize everything and start listening for requests ***
 let express = require('express');
-let http = require('http');
 
-let routes = require('./routes/api');
+let api = require('./routes/api');
 
-// Initialize express and create http server and listen on port 3000
+// Initialize express and create http server
 let app = express();
-let server = http.createServer(app);
 
 // Use port passed as argument or 3000 as default
 let port = process.argv[2] ? process.argv[2] : 3000;
 
-// Start listening
-server.listen(() => console.log("Listening on port " + port));
-
 // Initialize api URL
-app.use('/api', routes);
+app.use('/', api);
+
+// Start listening
+app.listen(port, () => console.log("Listening on port " + port));
