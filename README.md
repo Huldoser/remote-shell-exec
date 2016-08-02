@@ -19,7 +19,7 @@ Now you will get the response in your browsers' window.
 
 !!! BE AWARE !!!
 The way it executes the command is exactly the same way as you will execute from your terminal.
-Deleting, modifying or creating files will actually modify thus changes on your machine.
+Deleting, modifying or creating files will actually save these changes to your machine.
 
 
 ##Project purpose:
