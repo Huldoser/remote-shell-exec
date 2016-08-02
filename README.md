@@ -2,15 +2,24 @@
 Run shell commands on your *nix machine from a remote source using this API.
 
 
-
 ##Getting started:
 ```
 npm install
 node app.js [port_number]
 ```
-
 *If the port number is not passed as an argument the server will run on port 3000.
 
+
+##Usage
+Open your browser and execute the command the following way:
+```
+http://localhost:[port_number]/api/[the_command_to_execute]
+```
+Now you will get the response in your browsers' window.
+
+!!! BE AWARE !!!
+The way it executes the command is exactly the same way as you will execute from your terminal.
+Deleting, modifying or creating files will actually modify thus changes on your machine.
 
 
 ##Project purpose:
