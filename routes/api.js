@@ -18,6 +18,8 @@ router.get('/:command', (req, res) => {
     exec(req.params['command'].toString(), (error, stdout, stderr) => {
         if (!error) {
             stderr ? stderr : res.send(stdout);
+        } else {
+            console.log('Something went wrong executing the command:\n' + error);
         }
     });
 });

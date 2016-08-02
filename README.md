@@ -15,6 +15,13 @@ Open your browser and execute the command the following way:
 ```
 http://localhost:[port_number]/api/[the_command_to_execute]
 ```
+Whenever you have spaces in your command use %20 instead.
+
+Example:
+```
+http://localhost:3000/api/echo%20"its%20working!"
+```
+
 Now you will get the response in your browsers' window.
 
 !!! BE AWARE !!!
