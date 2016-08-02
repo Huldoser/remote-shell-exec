@@ -1,4 +1,6 @@
 // *** This file initialize everything and start listening for requests ***
+'use strict';
+
 let express = require('express');
 
 let api = require('./routes/api');
@@ -10,7 +12,7 @@ let app = express();
 let port = process.argv[2] ? process.argv[2] : 3000;
 
 // Initialize api URL
-app.use('/', api);
+app.use('/api', api);
 
 // Start listening
 app.listen(port, () => console.log("Listening on port " + port));
