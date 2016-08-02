@@ -1,6 +1,6 @@
 {
   "name": "remote-shell-api-server",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Run shell scripts on your linux machine from a remote source using this API",
   "main": "server.js",
   "scripts": {
