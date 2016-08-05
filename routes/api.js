@@ -19,7 +19,7 @@ router.get('/:command', (req, res) => {
         if (!error) {
             stderr ? stderr : res.send(stdout);
         } else {
-            console.log('Something went wrong executing the command:\n' + error);
+            console.log(error);
         }
     });
 });
