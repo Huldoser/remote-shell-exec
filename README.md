@@ -29,7 +29,7 @@ The way it executes the command is exactly the same way as you will execute from
 Deleting, modifying or creating files will actually save these changes to your machine.
 
 
-##Project purpose:
+##Project Purpose:
 This project is made for my educational purposes to get a better understanding of the Node.js runtime, including some frameworks like Express.
 
 While the latest stable Node.js version is still not fully supporting the ES6 standard (As you can check [here](http://node.green/)), I encouraged myself to use it whenever possiable.
