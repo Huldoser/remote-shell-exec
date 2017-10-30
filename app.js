@@ -1,16 +1,16 @@
 // *** This file initialize everything and start listening for requests ***
 'use strict';
 
-let express = require('express');
-let exec = require('child_process').exec;
+const express = require('express');
+const exec = require('child_process').exec;
 
-let api = require('./routes/api');
+const api = require('./routes/api');
 
 // Initialize express and create http server
-let app = express();
+const app = express();
 
 // Use port passed as argument or 3000 as default
-let port = process.argv[2] ? process.argv[2] : 3000;
+const port = process.argv[2] || 3000;
 
 // Initialize api URL
 app.use('/api', api);
@@ -19,7 +19,7 @@ app.use('/api', api);
 app.use('/', express.Router().get('/', (req, res) => {
     exec('cat README.md', (error, stdout, stderr) => {
         if (!error) {
-            stderr ? stderr : res.send(stdout);
+            stderr || res.send(stdout);
         } else {
             console.log(error);
         }
